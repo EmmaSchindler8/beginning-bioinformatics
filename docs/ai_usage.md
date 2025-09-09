@@ -43,3 +43,25 @@ This code opens the file, then iterates through each line using enumerate to get
   Gemini: Excellent! You've got the right steps. Here's the code to implement the logic you described within a loop that reads from practice_5.txt.....
 - What I changed before committing: I was messing up and realized it is because I was not using a text variable (I used a line variable). I changed it to text and also used gemini to work out the quirks in my loop over the words. 
 - How I verified correctness (tests, sample data): Tested for correctness and used the practice set from Rosalind. 
+# AI Use Log (6th Use) 
+- Tool/model & version: Gemini
+- What I asked for: When I ran my code from task 23.1 (modifying the code from 22.1) I got an import error. I asked Gemini to please explain the error. 
+- Snippet of prompt(s):
+  Gemini: The error in cell HsmdhYQOZe78, ImportError: cannot import name 'GC' from 'Bio.SeqUtils', indicates that Python couldn't find the name GC to import from the Bio.SeqUtils module.
+
+While GC is indeed a function in Bio.SeqUtils,......
+
+- What I changed before committing: I had to change when I imported GC, since it was currently importing inside the loop and not before it.  
+- How I verified correctness (tests, sample data): Tested for correctness and used the practice set from Rosalind.
+** This did not work ** Moved onto the Rosalind practice problem to try my luck with that. 
+  6th use continued)
+This still did not work and Gemini kept saying that GC was not the correct verbiage. I googled and found online that "gc_fraction" is the correct verbiage for the newer biopython models. So, I shifted it up and still had errors. I took a break from Gemini to see if chat GPT could explain it to me. That is when I realized I forgot it was still a txt file and I had left the parse/parameter line of code out from the example (still do not know if this was a correct fix?)
+Then, I took the loop from chat gpt 
+"for record in SeqIO.parse(filename, "fasta"):
+        gc = gc_fraction(record.seq) * 100
+        if gc > max_gc:
+            max_gc = gc
+            max_id = record.id" 
+
+But I changed it to names that made sense to me and helped me udnerstand it better. (Did not just copy and paste without changing it and trying to internalize what it ws telling me) 
+From there, I ran the code, there was some minor error (I think with indentation) that Gemini showed me. I fixed that, and then I verified correctness of my code using the Rosalind sample data. It finally worked, and I was so glad! 
