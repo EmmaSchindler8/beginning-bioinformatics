@@ -38,7 +38,7 @@ This code opens the file, then iterates through each line using enumerate to get
 - How I verified correctness (tests, sample data): Tested for correctness and double checked it with the guide that it outputted how it was supposed to.
 # AI Use Log (5th Use) 
 - Tool/model & version: Gemini
-- What I asked for: On the fifth Rosalind, I was messing up and realized it is because I was not using a text variable. I explained to Gemini what my goals were and it used the code I already had, tweaked it, and added a bit more that I then typed up. 
+- What I asked for: On the fifth Rosalind, I explained to Gemini what my goals were and it used the code I already had, tweaked it, and added a bit more that I then edited mine with its suggestions. 
 - Snippet of prompt(s):
   Gemini: Excellent! You've got the right steps. Here's the code to implement the logic you described within a loop that reads from practice_5.txt.....
 - What I changed before committing: I was messing up and realized it is because I was not using a text variable (I used a line variable). I changed it to text and also used gemini to work out the quirks in my loop over the words. 
