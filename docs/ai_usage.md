@@ -28,3 +28,11 @@
 This code opens the file, then iterates through each line using enumerate to get both the line number (starting from 0) and the line content.......
 - What I changed before committing: I added the lines of code it suggested via hand typing them. I did not know about using enumerate and had planned on trying to just modify what I had practice typed in the 15.1 cell. So, I was glad to see a model of how the code needed to be to work. 
 - How I verified correctness (tests, sample data): I used the test text from the Rosalind example before then using my code again with the generated problem #4 text. 
+# AI Use Log (4th Use) 
+- Tool/model & version: Gemini
+- What I asked for: When i practiced 18.1 I could not understand if I was now in fasta or not, so I asked Gemini.
+- Snippet of prompt(s):
+  Me: is this code a fasfa file
+  GeminiNo, the code in cell b-2XDof4rtP8 does not produce a FASTA file.
+- What I changed before committing: I added the lines of code it suggested to make it a Fasta file (not graded part from Rosalind, I did this just for myself)
+- How I verified correctness (tests, sample data): Tested for correctness and double checked it with the guide that it outputted how it was supposed to. 
